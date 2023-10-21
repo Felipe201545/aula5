@@ -1,0 +1,281 @@
+/* Meu primeiro Comentário */
+/* Reset do CSS para o navegador*/ 
+*{
+    margin: 0;  /* Margem */
+    padding: 0;  /* Preenchimento */
+} 
+
+/* Corpo do Site */ 
+body{
+    height: 100%; /* altura */
+    width: 100%; /* largura */
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#6e7392, #128eb4);
+    background-repeat: no-repeat;
+}   
+/* Logo  */ 
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+.imagem img{
+    width: 170px;
+    border-radius: 200px;
+    margin-top: 150px;
+}
+
+/* Titulo */ 
+.name{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #020305;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Topico Redes Sociais */
+.redes-sociais{
+    margin-top: 10px;
+    display:flex; /* organizar itens na mesma linha */
+    justify-content:center;
+    align-items:center; /* alinhamento de itens  */
+}
+.icon, #xemail {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-radius: 30px; 
+    transition: all 0.3s ease-out; /* voltar na explicação */ 
+    box-shadow:0 5px 5px rgba(0,0,0,.1);
+    cursor: pointer;
+    margin: 3px;
+    overflow: hidden;
+}
+.icon i, #email i{
+    display: inline-block;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 30px;
+    background-color: rgb(237, 237, 237);
+    color:#308ff4;  /* Cor do Icone */
+    cursor: pointer;
+}
+.icon span a{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    float: right;
+    margin-right: 23px;
+    font-weight: 100;
+    color:#308ff4 ; /* Cor do Icone */
+    line-height: 35px;
+    font-size: 17px;
+}
+.name-icon{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 40px;
+    float: right;
+    color: #c7c8c8;
+    font-weight: 100;
+    line-height: 35px;
+    font-size: 17px;
+}
+.icon:hover{
+    width: 125px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 20px;
+}
+.icon:nth-child(1):hover i{
+    background: #030303;
+}
+.icon:nth-child(2):hover i{
+    background: #df4bf2;
+}
+.icon:nth-child(3):hover i{
+    background: #41adec;
+}
+.icon:nth-child(4):hover i{
+    background: #030303;
+}
+.email:hover i {
+    background: red;    
+}
+/* Css TEXTO */
+.texto{
+    position: relative;
+    display: flex;
+    justify-content: center; /* centralizar Texto */
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    width: 750px;
+    height: 275px;
+    padding: 30px 35px;
+    border-radius: 5px;
+    color: rgb(56, 52, 46);
+    overflow: hidden;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1); /* RGB-A = Alpha para transparencia*/
+    cursor: pointer;
+    background-color: rgb(182, 182, 159);
+   
+}
+#sobre-mim{
+    position: absolute;
+    top: 15px;
+    display: flex;
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 35px;
+}
+.linguagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.linguagem img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    border-radius: 200px;
+    margin: 5px;
+    box-shadow: 0px;
+}
+.projetos { 
+    margin: auto;
+    margin-top: 40px;
+    flex-direction: column;
+}
+.projetos a{
+    text-decoration: none;
+    color: crimson;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    color: #308ff4;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.item{
+    margin: auto;
+    display: flex; /* nulo */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: #020305;
+    border: 1px solid  #c40b0b;
+    border-radius: 50px;
+    width: 570px;
+    height: 60px;
+    margin-bottom: 7px;
+    background: yellow;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}                                            
+
+#video{
+    padding: 10px;
+    margin: auto;
+    display: none;
+}
+#video.active{
+    display: block;
+}
+.rodape{
+    color: azure;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+    font-family:'Times New Roman', Times, serif
+}
+
+ /* Fim das configurações para DESKTOP */
+
+
+
+
+  /* Dispostivos Mobiles */
+  @media (max-width: 700px) {
+    .imagem img{
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 30px;
+    }
+    .texto{
+        width: 350px;
+        height: 250px;
+    }
+    .linguagem img{
+        width: 165px;
+    }
+    .item{
+        width: 350px;
+    }
+    #video{
+        width: 330px;
+    }
+  } /* Fim resolucao 700px */
+
+  @media (max-widht: 500px) {
+    .imagem img {
+        width:  120px;
+    }
+    .texto{
+        padding: 15px;
+        width: 244px;
+        height: 270px;
+        margin-top: 30px;
+        font-size:  14px;
+    }
+    .subtitulo{
+        font-size: 22px;
+        margin-top: 22px;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #video{
+        width: 270px;
+        height: 160px;
+    }
+    .item{
+        width: 265px;
+        height: 40px;
+    }
+    .linguagem img {
+        margin-top: 15px;
+        width: 130px;
+    }
+    .icon, #email {
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+    }
+    .icon i, #email i{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 30px;
+    }
+  } /* Fime resolucao 500px */
